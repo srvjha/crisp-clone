@@ -1,23 +1,24 @@
       *{ 
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
-        body{
-            margin: 0px;
-            padding: 0px;
-           
-        }
+       
         header {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: gainsboro;    
-            padding: 4px;       
+            /* background-color: gainsboro;     */
+            padding: 5px; 
+            position: sticky; 
+            z-index: 2;     
         }
         .main-container{
             display: flex;            
             height: 100%;
             width: 100%;
             margin:0px 11.1%;
+            padding: 12px;
         }
         
 
@@ -36,13 +37,14 @@
             gap:30px;
             font-family:Crisp Aeonik Pro Medium, sans-serif;
             font-weight:bold;
+            color:#344055
            
         }
        
         #left{
             display: flex;
             justify-content: end;
-            align-items: end;
+            align-items: center;
             flex:0
            
         }
@@ -51,43 +53,42 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex:1
-            
-            
-            
+            flex:1;
+                       
         }
+
+
         #right{
             display: flex;
-            justify-content: center;
+            justify-content: end;
             align-items: center;
-            gap: 10px;
+            gap: 30px;
+            font-family:Crisp Aeonik Pro Medium, sans-serif;
+            font-weight: 900;
+            color:#344055;
+            font-size:16px;
             flex:1
             
         }
-        .header-child{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-            
-        }
+        
 
         select {
             background-color: transparent;
             border: none;
             font-weight: bold;
+            color:#344055
         }
 
         #search{
             margin:0px;
-            padding: 10px;
-            background-color: white;
+            padding: 5px 15px;
+            background-color: #fff9;
             border: 1px solid rgb(243, 242, 242);
             border-radius: 11px;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap:8px;
+            gap:10px;
         }
 
         #ctrl{
@@ -95,6 +96,81 @@
             border:1px solid rgb(241, 236, 236);
             padding: 4px;
             border-radius: 5px;
+            margin-left: 15px;
+            background-color: white;
+        }
+        
+       /* #right button{
+            padding: 10px 18px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(180deg, #ffffff3d, #fff0), #1972f5;
+            color:white;
+            font-size: 14px;
+            font-weight: 600;
+            
+        } */
+
+        #right button{
+            padding: 10px 18px;
+            border: none;
+            border-radius: 12px;
+            background: white;
+            color:#344054;
+            font-size: 14px;
+            font-weight: 600;
+            
         }
 
+        .home{
+           
+            background-image: linear-gradient(180deg, #b9deff, #99cefc 50%, #b9deff00 90%, #b9deff00);
+            height: 100%;
+            object-fit:contain;
+            position: absolute;
+                     
+        }
+
+        .home-block{
+            left: -10%;
+            position: absolute;
+            top:-350px;
+            width:110%
+           
+        }
+
+        .bot{            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed; 
+            bottom: 20px;
+            right:20px;
+            z-index: 1000;
+            
+
+        }
+
+        .bot-m{
+            width: 62px;
+            height: 62px;
+            border-radius: 50%; 
+            background-color: #1972F5;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin:5px 10px;
+        }
+
+        .bot-m img{
+            
+            width:34px;
+            height:28px; 
+            margin-top: 5px;
+            margin-left: -2px;  
+           
+            
+        }
+
+       
         

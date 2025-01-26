@@ -1,0 +1,100 @@
+      *{ 
+        box-sizing: border-box;
+      }
+        body{
+            margin: 0px;
+            padding: 0px;
+           
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gainsboro;    
+            padding: 4px;       
+        }
+        .main-container{
+            display: flex;            
+            height: 100%;
+            width: 100%;
+            margin:0px 11.1%;
+        }
+        
+
+        #logo{
+           
+            background-repeat: no-repeat;
+            
+        }
+        ul{  
+            margin:0px;
+            padding: 5px;
+            display: flex;           
+            justify-content: start;
+            align-items: start;
+            list-style: none;            
+            gap:30px;
+            font-family:Crisp Aeonik Pro Medium, sans-serif;
+            font-weight:bold;
+           
+        }
+       
+        #left{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            flex:0
+           
+        }
+        
+        #middle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex:1
+            
+            
+            
+        }
+        #right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex:1
+            
+        }
+        .header-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            
+        }
+
+        select {
+            background-color: transparent;
+            border: none;
+            font-weight: bold;
+        }
+
+        #search{
+            margin:0px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid rgb(243, 242, 242);
+            border-radius: 11px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:8px;
+        }
+
+        #ctrl{
+            font-size:11px;
+            border:1px solid rgb(241, 236, 236);
+            padding: 4px;
+            border-radius: 5px;
+        }
+
+        

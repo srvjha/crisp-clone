@@ -2,6 +2,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        background-color:  #c1e0fb;
       }
        
         header {
@@ -121,23 +122,80 @@
             font-weight: 600;
             
         }
+        .main{
+            display: flex;
+            flex-direction: column;
+            /* background-color: yellow; */
+            justify-content: center;
+            align-items: center;
+            margin:50px 210px;
+            padding: 10px 20px;
+        }
+
+        .main-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: red; */
+
+        }
+
+        .main-content div{
+            display: flex;
+            border:1px solid #1972f5;
+            background-color: #1972f51a;
+            padding:9px 10px;
+            border-radius: 100px;
+            gap:6px;
+            font-family:  Crisp Aeonik Pro Medium, sans-serif;
+        }
+        .main-content div p{
+            background: #1972f5;
+            border-radius: 100px;
+            color: #fff;
+            display: inline-block;
+            font-size: 12px;
+            line-height: 22px;
+            margin-right: 4px;
+            padding: 0 8px;
+            font-weight: bold;
+        }
+        .main-content div span{
+            color:#1972f5;
+            font-weight: bold;
+        }
 
         .home{
            
-            background-image: linear-gradient(180deg, #b9deff, #99cefc 50%, #b9deff00 90%, #b9deff00);
-            height: 100%;
-            object-fit:contain;
-            position: absolute;
-                     
+            background-image: linear-gradient(180deg, #b9deff, #99cefc 50%, #b9deff00 90%, #b9deff00);           
+            position: relative;
+            height: 100vh;
+            top:-70px;        
+            overflow: visible;      
         }
 
-        .home-block{
-            left: -10%;
-            position: absolute;
+        .home_child_1 {
             top:-350px;
-            width:110%
-           
+            position: absolute;
+            left: -10%;
         }
+
+        .home_child_2 {
+            
+            position: absolute;
+            top:190px;
+            left:0
+        }
+
+        .home_child_3 {
+            position: absolute; 
+            right: 0px; 
+            top:186px
+            
+        }
+
+       
 
         .bot{            
             display: flex;
